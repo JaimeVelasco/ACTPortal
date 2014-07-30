@@ -1,0 +1,34 @@
+body {
+	/*background-image:url('../img/background.jpg');*/
+}
+.top-bar {
+	min-height: 130px;
+	background-image:url('../img/background.jpg');
+}
+.top-bar .title-area {
+	padding-top: 2em;
+	padding-left: 15%;
+}
+#header {
+	position: absolute;
+	display: table;
+	width: 100%;
+	line-height: normal;
+	text-align: center;
+}
+#mainHeader {
+	position: relative;
+	top: 0.5em;
+	color: #fff;
+}
+#secondaryHeader {
+	position: relative;
+	top: 0.5em;
+	color: red;
+	font-style:	italic; 
+}
+#yellowBar {
+	background-color: yellow;
+	width: 100%;
+	height: 20px;
+}
