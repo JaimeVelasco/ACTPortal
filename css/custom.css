@@ -157,7 +157,7 @@ footer p {
 .f-dropdown::after{
 	content: none;
 }*/
-#transition {
+#specialEd {
 	position: absolute;
 	top: 0em;
 	left: 2.45em;
@@ -170,7 +170,7 @@ footer p {
 	transition: width 1s, height 1s, background 1s;
 	z-index: 1;
 }
-#transition:hover {
+#specialEd:hover {
 	width: 918px;
 	height: 390px;
 	background: #9ed900;
