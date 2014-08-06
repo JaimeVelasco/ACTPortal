@@ -1603,7 +1603,7 @@ meta.foundation-mq-topbar {
         width: 1px;
         overflow: hidden;
         clip: rect(1px, 1px, 1px, 1px); }
-    .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+    .top-bar-section .has-dropdown:hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
       display: block;
       position: static !important;
       height: auto;
