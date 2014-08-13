@@ -2950,8 +2950,8 @@ blockquote p {
 
 @media only screen and (min-width: 40.063em) {
   .tabs.vertical {
-    width: 20%;
-    float: left;
+   /* width: 20%;*/
+    /*float: left;*/
     margin-bottom: 1.25rem; }
 
   .tabs-content.vertical {
