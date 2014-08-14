@@ -243,3 +243,22 @@ hr.thickGreen{
 .fixed {
 	text-align: center !important;
 }
+.accordion .accordion-navigation > a, .accordion dd > a {
+	background: #c0d38e !important;
+	padding: .5em !important;
+	color: #5b7d00 !important;
+	font-size: 1.1em !important;
+}
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+	background: #5b7d00 !important;
+	color: #fff !important;
+}
+
+.accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+	background: #f4f9e5 !important;
+
+}
+.videomodal {
+	width: 155px;
+	background:url(images/sprite.png) 330 330px;}
+}
