@@ -13,10 +13,8 @@ body {
 	padding-top: 2em;
 	padding-left: 15%;
 }
-#header {
-	position: absolute;
+#header {	
 	display: table;
-	width: 100%;
 	line-height: normal;
 	text-align: center;
 }
@@ -26,6 +24,10 @@ body {
 #secondaryHeader {
 	color: red;
 	font-style:	italic; 
+}
+#loginbtn {
+	position: relative;
+	bottom: 3.5em;
 }
 #yellowBar {
 	background-color: yellow;
@@ -43,6 +45,12 @@ body {
 #yellowBar2 a {
 	font-size: 1.5em;
 }
+#nobull {
+	 list-style-type: none;
+	 text-align: left;
+	 padding: 10px;
+}
+
 /*Side menu*/
 dl.magellan {
 	width: 200px;
@@ -51,6 +59,7 @@ dl.magellan {
 position: static !important;
 width: 100% !important;
 float: none;
+/*margin-left: -4em;*/
 }
 
 
@@ -65,8 +74,9 @@ float: none;
 #homepage {
 	background-image: url('../img/paper.jpg'); 
 	background-repeat: repeat-y;
-	height: 70%;
+	height: 72%;
 	background-size: cover;
+	overflow: auto;
 }
 #main-content{
 	background-image: url('../img/paper.jpg'); 
@@ -119,6 +129,7 @@ footer p {
 	left: 2.45em;
 	width: 250px;
 	height: 310px;
+	padding: 1em; 
 	background: transparent;
 	-webkit-transition: width 1s, height 1s, background 1s, z-index .1s, top 1s;
 	   -moz-transition: width  1s, height 1s, background 1s, z-index .1s, top 1s;
@@ -144,7 +155,26 @@ footer p {
 	opacity:1;
 	transition-delay: .54s;
 }
-
+#specialEd h4{
+	color: #fff;
+}
+#specialEd h4:hover{
+	color: #f6f6f6;
+}
+.menuhr {
+	margin: 0px
+}
+.menuhrlong {
+	margin: 0px;
+	width: 200%;
+}
+#elearn {
+	position: relative;
+	left: 4.5em;
+}
+.smlbr{
+	line-height: 2.7em;
+}
 
 #reading {
 	position: absolute;
@@ -192,6 +222,11 @@ footer p {
 
 }
 
+@-moz-document url-prefix() { 
+  #frameworks, #reading, #specialEd{
+     top: 3.5em;
+  }
+}
 
 .top-bar-section li a:not(.button) {
     background: yellow !important; 
@@ -213,19 +248,42 @@ footer p {
 
 
 
-
-
-.sticky.top-bar-section ul {display: table; margin: 0 auto;}
-.sticky.top-bar-section ul li {display: table-cell;}
-
-
-
+.redbold{
+	font-weight: bold;
+	color: #CC0000;
+}
+.origunder {
+	font-weight: bolder;
+	color: #000099;
+}
 
 #redpanel{
 	background-color: red;
 }
 #redpanel p{
 		color: #fff;
+}
+#specialedpanel{
+	background-color: #faa544;
+	min-height: 250px;
+}
+#specialedpanel p{
+		color: #000;
+		margin-top: 4em;
+		font-weight: bold;
+		font-style: italic;
+}
+#assistivepaneltxt{
+	position: absolute;
+	left: 9em;
+	bottom: 1em;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.2em;
+
+}
+img {
+	padding: .5em; 
 }
 #left{
 	float: left;
@@ -260,5 +318,8 @@ hr.thickGreen{
 }
 .videomodal {
 	width: 155px;
-	background:url(images/sprite.png) 330 330px;}
+	background:url(images/sprite.png) 330 330px;
+}
+#videoz {
+	text-align: center;
 }
