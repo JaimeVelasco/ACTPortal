@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACT Portal</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -12,26 +13,27 @@
       <div id="toparea">
           <ul class="title-area small-3 columns" >
             <li class="name">
-              <a href="index.html"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
+              <a href="#"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
             </li>
           </ul>
           <div class="small-6 columns" id="header">
             <h1 id="mainHeader">Intern Training Portal</h1>
             <h3 id="secondaryHeader"> Authorized Access Only</h3>
           </div>
-        <div id="loginbtn" class="small-3 columns">
+        <section class="top-bar-section small-3 columns">
           <!-- Right Nav Section -->
-            <a href="#" class="button large alert">LOGIN</a>
-        </div>
+           <a href="#" id="loginbutton" class="button tiny alert" data-reveal-id="login">LOGIN</a>
+        </section>
       </div> 
 
-      
+
+      <div class="contain-to-grid">
         <nav id="yellowBar2" class="top-bar" data-topbar>
           <section class="top-bar-section">
             <ul>
-              <li>
+              <!-- <li>
                 <a href="index.html">Home</a>
-              </li>
+              </li> -->
               <li>
                 <a href="specialed.html">Special Education</a>
               </li>
@@ -44,10 +46,10 @@
             </ul>
           </section>   
         </nav>
-      
+      </div>
   <div id="main-content">
     <div class="row">
-      <div class=" small-8 small-offset-3">
+      <div class=" small-12 columns">
         <a href="specialed.html" class="button small" id="left"> Previous Activity</a>
         <a href="math.html" class="button small" id="right">Next Activity</a>
         <hr>
@@ -74,15 +76,33 @@
             <a href="#texed">Texas Educational Code and Texas Administration CodeP</a>
           </dd>
           <dd data-magellan-arrival="texas4step">
-            <a href="#texas4step">What is Assistive Technology?</a>
+            <a href="#texas4step">Texas 4-Step Model</a>
           </dd>
         </dl>
       </div>
   <!-- End of sticky Left Nav Section -->
 <!-- ****************************** -->
+
       <div class="small-9 columns">
-        <h1>WELCOME to the online module for ASSISTIVE TECHNOLOGY! </h1>
-        <p align="LEFT">During this module, you will learn about legal mandates and guidelines that govern the use of Assistive Technology (AT) to students with disabilities in the public school. </p><p>During this session, you will be directed to the Texas Assistive Technology Network website to download important information. This is a valuable website that has been developed for teacher training on this very topic: <a href="http://www.texasat.net">www.texasat.net</a> bookmark this website! </p><p>During this module you will go to this website and print out Assistive Technology Resource Charts for your teacher notebook. You will also find additional resources on AT that may be very valuable to you as you enter the profession. Print out materials and resources to have them at your fingertips when needed. </p><p>You will need to complete the activity pages as you go through the session. These notes will serve as a reminder of the material covered and you will add them to your Special Education notebook to show to your instructor on the first night of face to face classes. </p><p>Go ahead, take a few minutes to look over Competency 004 from the Special Education TExES exam. You will be tested over this information on your TExES exam.</p>
+        <h1>Assistive Technology</h1>
+        <a name="welcome" data-magellan-destination="welcome"></a> <!-- magellan destination -->
+        <h3>WELCOME to the online module for ASSISTIVE TECHNOLOGY! </h3>
+        <p>
+          During this module, you will learn about legal mandates and guidelines that govern the use of Assistive Technology (AT) to students with disabilities in the public school. 
+        </p>
+        <p>
+          During this session, you will be directed to the Texas Assistive Technology Network website to download important information. This is a valuable website that has been developed for teacher training on this very topic: <a href="http://www.texasat.net">www.texasat.net</a> bookmark this website! 
+        </p>
+        <p>
+          During this module you will go to this website and print out Assistive Technology Resource Charts for your teacher notebook. You will also find additional resources on AT that may be very valuable to you as you enter the profession. Print out materials and resources to have them at your fingertips when needed. 
+        </p>
+        <p>
+          You will need to complete the activity pages as you go through the session. These notes will serve as a reminder of the material covered and you will add them to your Special Education notebook to show to your instructor on the first night of face to face classes. 
+        </p>
+        <p>
+          Go ahead, take a few minutes to look over Competency 004 from the Special Education TExES exam. You will be tested over this information on your TExES exam.</p>
+
+        <a name="whatisit" data-magellan-destination="whatisit"></a> <!-- magellan destination -->  
         <h2>What is Assistive Technology?</h2>
         <p>
           <h3 id="accordionheader">Individuals with Disabilities Education Act (IDEA)</h3> 
@@ -104,6 +124,7 @@
 
         <hr class="thickGreen">
         <br>
+        <a name="section504" data-magellan-destination="section504"></a> <!-- magellan destination -->
         <h2>Section 504 of the Rehabilitation Act:</h2>
         <p>Section 504 protects individuals who: </p>
         <ol>
@@ -121,6 +142,7 @@
           </p>
         </div>
         <hr class="thickGreen">
+        <a name="ada" data-magellan-destination="ada"></a> <!-- magellan destination -->
         <h2>Americans with Disabilities Act (ADA):</h2>
         <p>
           ADA prohibits any governmental entity from denying access to individuals with a disability and requires that auxiliary aids and services be provided. Children with disabilities who attend public school are protected by the ADA as individuals who are participating in programs or are using services provided by governmental entities. 
@@ -128,6 +150,7 @@
         <p>
           In addition to federal statues and regulations related to AT, <strong>school districts in Texas</strong> must also comply with <strong>provisions in Texas law</strong> requiring services to eligible students:
         </p>
+        <a name="texed" data-magellan-destination="texed"></a> <!-- magellan destination -->
         <h2>Texas Education Code and Texas Administrative Code</h2>
         <p>
           The definition of AT is very broad and you can see that a wide range of items may fall in this category. This is where a classification system comes in handy!
@@ -206,6 +229,7 @@
     </p>
     
     <div class="row">
+      <a name="texas4step" data-magellan-destination="texas4step"></a> <!-- magellan destination -->
        <h2>The Texas 4-Step Model</h2>
       <!-- Step Panels -->
           <dl class="accordion" data-accordion>
@@ -426,7 +450,7 @@
                 </div>
             <!-- Video 3 Modal -->
                      <div id="right">
-                      <a  href="#" data-reveal-id="videoModal"><img src="img/videoicon.png" id="imagen"></a>
+                      <span data-tooltip class="has-tip" title="Assistive Technology Resources"><a  href="#" data-reveal-id="videoModal"><img src="img/videoicon.png" id="imagen"></a></span>
                      </div>
                       <div id="videoModal" class="reveal-modal large" data-reveal="" display: block; opacity: 1;>
                         <h2>This modal has video</h2>
@@ -477,7 +501,7 @@
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript"> $(document).foundation();</script>
     <script type="text/javascript">
-      $(document).foundation({ "magellan-expedition": { destination_threshold: -650 } });
+      $(document).foundation({ "magellan-expedition": { destination_threshold: -400 } });
     </script>
     
   </body>

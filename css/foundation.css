@@ -1232,7 +1232,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  background: yellow; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -2905,7 +2905,7 @@ blockquote p {
       display: block;
       background: #efefef;
       color: #222222;
-      padding: 1rem 2rem;
+      padding: .5rem .5rem;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {

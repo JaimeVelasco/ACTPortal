@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACT Portal</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -15,15 +16,51 @@
               <a href="#"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
             </li>
           </ul>
-          <div class="small-6 columns" <!-- id="header" -->>
+          <div class="small-6 columns" id="header">
             <h1 id="mainHeader">Intern Training Portal</h1>
             <h3 id="secondaryHeader"> Authorized Access Only</h3>
           </div>
         <section class="top-bar-section small-3 columns">
           <!-- Right Nav Section -->
-            <a href="#" class="button large alert">LOGIN</a>
+           <a href="#" id="loginbutton" class="button tiny alert" data-reveal-id="login">LOGIN</a>
         </section>
       </div> 
+
+<!-- *********************** -->
+<!--  Login Modal -->
+          <div id="login" class="reveal-modal" data-reveal>
+            <div class="small-12 small-centered columns">
+              <div class="small-12 columns">
+                <div class="signup-panel small-text-center">
+                  <p class="welcome"> Welcome to the ACT Portal</p>
+                  <form>
+                    <div class="row collapse">
+                      <div class="small-2  columns">
+                        <span class="prefix"><i class="fi-torso-female"></i></span>
+                      </div>
+                      <div class="small-10  columns">
+                        <input type="text" placeholder="username">
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="small-2 columns ">
+                        <span class="prefix"><i class="fi-lock"></i></span>
+                      </div>
+                      <div class="small-10 columns ">
+                        <input type="text" placeholder="password">
+                      </div>
+                    </div>
+                  </form>
+                  <a href="#" class="button ">Sign In </a>                  
+                </div>
+              </div>
+             </div>
+           </div>
+<!-- End Login Modal -->
+<!-- ************************** -->
+
+
+
 
   <div id="yellowBar"></div>
   <div id="homepage">      
@@ -47,8 +84,8 @@
               <hr class="menuhr">
               <h5>Assistive Technology</h5>
               <ul id="nobull">
-                <a href="assistive_tech.html#fedstatues"><li>Federal Statues</li></a>
-                <a href="assistive_tech.html#tx4step"><li>Texas 4 Step Model</li></a>
+                <a href="assistive_tech.html#section504"><li>Federal Statues</li></a>
+                <a href="assistive_tech.html#texas4step"><li>Texas 4 Step Model</li></a>
               </ul>
               <a href="math.html"><h4>Activity 3 </h4></a>
               <hr class="menuhr">

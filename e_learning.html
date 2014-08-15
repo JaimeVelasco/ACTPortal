@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACT Portal</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -12,26 +13,27 @@
       <div id="toparea">
           <ul class="title-area small-3 columns" >
             <li class="name">
-              <a href="index.html"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
+              <a href="#"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
             </li>
           </ul>
           <div class="small-6 columns" id="header">
             <h1 id="mainHeader">Intern Training Portal</h1>
             <h3 id="secondaryHeader"> Authorized Access Only</h3>
           </div>
-        <div id="loginbtn" class="small-3 columns">
+        <section class="top-bar-section small-3 columns">
           <!-- Right Nav Section -->
-            <a href="#" class="button large alert">LOGIN</a>
-        </div>
+           <a href="#" id="loginbutton" class="button tiny alert" data-reveal-id="login">LOGIN</a>
+        </section>
       </div> 
 
-      
+
+      <div class="contain-to-grid">
         <nav id="yellowBar2" class="top-bar" data-topbar>
           <section class="top-bar-section">
             <ul>
-              <li>
+             <!--  <li>
                 <a href="index.html">Home</a>
-              </li>
+              </li> -->
               <li>
                 <a href="specialed.html">Special Education</a>
               </li>
@@ -44,10 +46,10 @@
             </ul>
           </section>   
         </nav>
-      
+       </div>
   <div id="main-content">
     <div class="row">
-      <div class=" small-8 small-offset-3">
+      <div class=" small-12 columns">
         <a href="math.html" class="button small" id="left">Previous Activity</a>
         <a href="#" class="button small" id="right">Next Activity</a>
         <hr>
@@ -755,7 +757,7 @@ disabilities. </p></td></tr> </tbody></table></td></tr><tr><td valign="TOP"><cen
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript"> $(document).foundation();</script>
     <script type="text/javascript">
-      $(document).foundation({ "magellan-expedition": { destination_threshold: -650 } });
+      $(document).foundation({ "magellan-expedition": { destination_threshold: -400 } });
     </script>
     
   </body>
