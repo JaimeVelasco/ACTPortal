@@ -347,9 +347,8 @@ hr.thickGreen{
 #nextbtn {
  	float: right;
  	background: #ff8400;
- 	border-right: 1px solid #fff;
 }
-#nextbtn::after{
-	content: "&#xf10b;");
-
+#prevbtn {
+ 	float: left;
+ 	background: #ff8400;
 }
