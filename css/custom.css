@@ -50,8 +50,9 @@ body {
 #nobull {
 	 list-style-type: none;
 	 text-align: left;
-	 padding: 10px;
+	 padding: 1px;
 }
+
 
 /*Side menu*/
 dl.magellan {
@@ -125,7 +126,7 @@ footer p {
 	font-size: .8em;
 }
 /*homepage Menu transitions*/
-#specialEd {
+#specialEd, #reading #frameworks{
 	position: absolute;
 	top: 0em;
 	left: 2.45em;
@@ -139,7 +140,7 @@ footer p {
 			transition: width 1s, height 1s, background 1s, z-index .1s, top 1s;
 	z-index: 10;
 }
-#specialEd:hover {
+#specialEd:hover, #reading:hover, #frameworks:hover{
 	width: 918px;
 	height: 390px;
 	background: #9ed900;
@@ -147,21 +148,42 @@ footer p {
 	top:3.8em;
 
 }
-#specialEd section{
+#specialEd section, #reading section, #frameworks section{
 	visibility:hidden;
 	opacity:0;
 	transition: visibility 0s, opacity 2s;
 }
-#specialEd:hover section{
+#specialEd:hover section, #reading:hover section, #frameworks:hover section{
 	visibility:visible;
 	opacity:1;
+	top: 1em;
 	transition-delay: .54s;
+
 }
-#specialEd h4{
+#specialEd h6, #reading h6, #frameworks h6{
+	color: #fff;
+	text-align: left;
+}
+#specialEd h6:hover, #reading h6:hover, #frameworks h6:hover{
+	color: #d5d5d5;
+	text-align: left;
+}
+#specialEd h4, #reading h4, #frameworks h4{
+	color: #fff;
+	text-align: left;
+}
+#specialEd h4:hover, #reading h4:hover, #frameworks h4:hover{
+	color: #d5d5d5;
+	text-align: left;
+}
+#specialEd a, #reading a, #frameworks a{
+	color: #000;
+}
+#specialEd a:hover, #reading a:hover, #frameworks a:hover{
 	color: #fff;
 }
-#specialEd h4:hover{
-	color: #f6f6f6;
+#specialEd li, #reading li, #frameworks li{
+	font-size: .7em;
 }
 .menuhr {
 	margin: 0px
