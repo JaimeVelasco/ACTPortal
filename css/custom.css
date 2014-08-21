@@ -68,7 +68,7 @@ float: none;
 
 .mainblock {
 	position: relative;
-	top: 5em;
+	top: 3em;
 	text-align: center;
 }
 .mainblock ol {
@@ -79,7 +79,7 @@ float: none;
 	background-repeat: repeat-y;
 	height: 72%;
 	background-size: cover;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 #main-content{
 	background-image: url('../img/paper.jpg'); 
