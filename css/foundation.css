@@ -2352,7 +2352,8 @@ meta.foundation-mq-topbar {
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   background: white;
   z-index: 50;
-  min-width: 200px;
+  min-width: 25
+  0px;
   padding: 10px; }
   [data-magellan-expedition] .sub-nav, [data-magellan-expedition-clone] .sub-nav {
     margin-bottom: 0; }
