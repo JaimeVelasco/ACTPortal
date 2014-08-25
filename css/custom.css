@@ -425,4 +425,7 @@ display: inline-block;
 
 margin-top: 2em;
 }
-
+.flex-video.widescreen {
+padding-bottom: 60.34%;
+background-color: #000;
+}
