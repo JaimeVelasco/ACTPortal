@@ -60,14 +60,20 @@
   <!-- Sticky Left Nav Section -->
       <div class="small-3 columns">
         <dl class="magellan tabs vertical" data-magellan-expedition="fixed">
-          <dd data-magellan-arrival="dyscalculia">
-            <a href="#dyscalculia">Dyscalculia</a>
+          <dd data-magellan-arrival="background">
+            <a href="#background">Background</a>
           </dd>
-          <dd data-magellan-arrival="studentrsrc">
-            <a href="#studentrsrc">Student Resource Profile</a>
+          <dd data-magellan-arrival="analysis">
+            <a href="#analysis">Analysis</a>
           </dd>
-          <dd data-magellan-arrival="strategies">
-            <a href="#strategies">Strategies &amp; tips</a>
+          <dd data-magellan-arrival="question">
+            <a href="#question">Question Analysis</a>
+          </dd>
+          <dd data-magellan-arrival="benchmarks">
+            <a href="#benchmarks">Benchmarks and Interventions</a>
+          </dd>
+          <dd data-magellan-arrival="helpweb">
+            <a href="#helpweb">Helpful Websites</a>
           </dd>
         </dl>
       </div>
@@ -117,6 +123,8 @@
         <p align="center">
           <img src="images/stidu.gif" width="237" height="166">
         </p>
+        <a name="background" data-magellan-destination="background"></a> <!-- magellan destination -->
+        <hr class="thickGreen">
         <p>
           <span class="redbold">Background Information on STAAR</span><br>
           The <span class="origunder">State of Texas Assessments of Academic Readiness (STAAR)</span> is the standardized testing program used in Texas primary and secondary schools to assess students' attainment of reading, writing, math, science, and social studies skills required under Texas education standards. Legislation requires states to measure student progress in reading and math annually in grades 3 - 8 and at least once in grades 10 - 12. In Texas, students must meet the standard on STAAR to graduate from high school. Results from the STAAR tests are also used to determine the ratings for districts and campuses in the state of Texas.
@@ -142,6 +150,8 @@
         <p>
           There are alternate Assessments for students receiving special education services. Those students being home-schooled or attending private schools are not required to take the STAAR test.
         </p>
+        <a name="analysis" data-magellan-destination="analysis"></a> <!-- magellan destination -->
+        <hr class="thickGreen">
         <p>
           <span class="redbold">STAAR Analysis</span><br>
           <br>
@@ -188,8 +198,10 @@
         <p>
           You can also identify specific skills that need re-teaching or reinforcement.
         </p>
+        <a name="question" data-magellan-destination="question"></a> <!-- magellan destination -->
+        <hr class="thickGreen">
         <p>
-          <span class="parahead">Question Analysis</span><br>
+          <span class="redbold">Question Analysis</span><br>
           Look again at your STAAR <b>answer sheet</b>.
         </p>
         <p>
@@ -214,8 +226,10 @@
         <p>
           &nbsp;
         </p>
+        <a name="benchmarks" data-magellan-destination="benchmarks"></a> <!-- magellan destination -->
+        <hr class="thickGreen">
         <p>
-          <span class="parahead"><img src="images/bench.gif" width="144" height="137" align="left">Benchmarks and Interventions</span><br>
+          <span class="redbold"><img src="images/bench.gif" width="144" height="137" align="left">Benchmarks and Interventions</span><br>
           Standards-based assessments are sometimes called <b>benchmarks</b> because they are used to gather data on how students are progressing in their mastery of the curriculum. In Texas, the standards are the Texas Essential Knowledge and Skills (TEKS). The TEKS are aligned through the grades so students in Texas schools are mastering a curriculum that builds as they progress through the grades. The TEKS are also aligned with national standards and College Board expectations.
         </p>
         <p>
@@ -239,8 +253,10 @@
         <p>
           <img src="images/computer.gif" width="163" height="130" align="right">Helping students progress on STAAR can help you keep your job. You should chart student progress on benchmarks and STAAR tests. This information should be readily available to administrators and Field Supervisors.
         </p>
+        <a name="helpweb" data-magellan-destination="helpweb"></a> <!-- magellan destination -->
+        <hr class="thickGreen">
         <p>
-          <span class="parahead">Helpful websites:</span><br>
+          <span class="redbold">Helpful websites:</span><br>
           <span class="origunder">TEKS:</span> <a href="http://www.tea.state.tx.us/index2.aspx?id=6148" target="_blank"><br>
           http://www.tea.state.tx.us/index2.aspx?id=6148</a>
         </p>
@@ -256,6 +272,14 @@
           Complete Activity 8 Summary Page
         </h2>
        </div>
+       <div class="row">
+        <div class=" small-12 columns">
+          <a href="read7_sheltered_content.html" class="button tiny" id="prevbtn">Previous Activity</a>
+          <a href="read8_staar_bench.html" class="button tiny" id="topbtn" >Back to top</a>
+          <a href="read9_activities.html" class="button tiny" class="" id="nextbtn"> Next Activity</a>
+          <hr>
+        </div>  
+      </div>
     </div>
   </div>  <!-- end of main-content  -->
 
@@ -275,7 +299,7 @@
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript"> $(document).foundation();</script>
     <script type="text/javascript">
-      $(document).foundation({ "magellan-expedition": { destination_threshold: -120 } });
+      $(document).foundation({ "magellan-expedition": { destination_threshold: -200 } });
     </script>
     
   </body>

@@ -45,7 +45,6 @@ body {
 	position: relative; 
 	font-size: 1.5em;
 	text-align: center;
-
 }
 
 .top-bar-section ul li > a {
@@ -68,7 +67,11 @@ body {
 	 padding: 1px;
 }
 
-
+.whitehead {
+font-size: 14pt;
+font-weight: bold;
+color: #FFFFFF;
+}
 /*Side menu*/
 dl.magellan {
 	width: 240px;
@@ -349,7 +352,10 @@ footer p {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 1.2em;
-
+}
+.handount{
+	font-weight: bold;
+	color: #660066;
 }
 #imagen {
 	padding: .5em; 
@@ -413,19 +419,29 @@ hr.thickGreen{
  	background: #ff8400;
  	margin: 2em;
 }
-
+#topbtn{
+	background: #5b7d00;
+	margin: 2em;
+	position: relative;
+	left: 25%;
+}
+#nextbtn:hover, #prevbtn:hover {
+	background: #5b7d00;
+}
+#topbtn:hover {
+	background: #ff8400;
+}
 nav.top-bar {
-text-align:center;
+	text-align:center;
 }
 section.top-bar-section {
-display: inline-block;
+	display: inline-block;
 }
 
 [data-magellan-expedition], [data-magellan-expedition-clone] {
-
-margin-top: 2em;
+	margin-top: 2em;
 }
 .flex-video.widescreen {
-padding-bottom: 60.34%;
-background-color: #000;
+	padding-bottom: 60.34%;
+	background-color: #000;
 }

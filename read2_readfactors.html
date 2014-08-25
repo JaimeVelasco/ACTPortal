@@ -60,14 +60,8 @@
   <!-- Sticky Left Nav Section -->
       <div class="small-3 columns">
         <dl class="magellan tabs vertical" data-magellan-expedition="fixed">
-          <dd data-magellan-arrival="dyscalculia">
-            <a href="#dyscalculia">Dyscalculia</a>
-          </dd>
-          <dd data-magellan-arrival="studentrsrc">
-            <a href="#studentrsrc">Student Resource Profile</a>
-          </dd>
-          <dd data-magellan-arrival="strategies">
-            <a href="#strategies">Strategies &amp; tips</a>
+          <dd data-magellan-arrival="Lags">
+            <a href="#Lags">Comprehension Lags</a>
           </dd>
         </dl>
       </div>
@@ -92,12 +86,29 @@
           <p align="left">
             Find the handout, <span class="handount">Factors that Influence Reading Development</span>, and watch this video that outlines the factors that influence reading:
           </p>
-          <div style="margin:0 auto; width:480px">
-            
+        
+<!-- ************** -->
+<!-- Video 1 Modal -->
+          <div id="videoz">
+            <span data-tooltip class="has-tip" title="Working with Competencies"><a href="#" data-reveal-id="videoModal1"><img src="img/videoicon.png"></a></span>
+           </div>
+            <div id="videoModal1" class="reveal-modal medium" data-reveal="" display: block; opacity: 1;>
+              <h2>Working with Competencies</h2>
+              <div class="flex-video widescreen">
+                <video width="320" height="240" controls>
+                  <source src="video/SpecialEd/15.working-with-competencies.m4v">
+                   Your browser does not support the video tag.
+                </video>
+              </div>
+              <a class="close-reveal-modal">&#215;</a>
+          </div>
+          <br>
+<!--  End Video 1 Modal -->
+<!-- ************** --> 
 
 
 
-          <p align="left">
+          <p class="row">
             <b>Now that we know what influences reading development, what can we as teachers do to overcome these factors?</b>
           </p>
           <table border="0" cellspacing="1" cellpadding="5">
@@ -121,11 +132,16 @@
               </tr>
             </tbody>
           </table>
-          <div align="left">
+
+        <a name="Lags" data-magellan-destination="Lags"></a> <!-- magellan destination -->
+          <div class="row">
+
             <p>
               <span class="parahead">What are factors that cause comprehension lags?</span>
             </p>
           </div>
+
+
           <p align="left">
             <span class="redbold">COMPREHENSION LAGS</span> - when students struggle or fail to comprehend or understand what they are reading in content or academic subject areas
           </p>
@@ -235,9 +251,15 @@
           <h2 style="text-align:center;">
           Complete Activity 2 Summary Page
           </h2>
-              
-            
           </div>
+        <div class="row">
+          <div class=" small-12 columns">
+            <a href="read1_compre.html" class="button tiny" id="prevbtn">Previous Activity</a>
+            <a href="read2_readfactors.html" class="button tiny" id="topbtn" >Back to top</a>
+            <a href="read3_2types_text.html" class="button tiny" class="" id="nextbtn"> Next Activity</a>
+            <hr>
+          </div>  
+        </div>  
        </div>
     </div>
   </div>  <!-- end of main-content  -->
@@ -258,7 +280,7 @@
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript"> $(document).foundation();</script>
     <script type="text/javascript">
-      $(document).foundation({ "magellan-expedition": { destination_threshold: -120 } });
+      $(document).foundation({ "magellan-expedition": { destination_threshold: -40 } });
     </script>
     
   </body>
