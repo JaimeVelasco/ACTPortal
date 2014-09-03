@@ -10,43 +10,26 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-      <div id="toparea">
-          <ul class="title-area small-3 columns" >
-            <li class="name">
-              <a href="index.html"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
-            </li>
-          </ul>
-          <div class="small-6 columns" id="header">
-            <h1 id="mainHeader">Intern Training Portal</h1>
-            <h3 id="secondaryHeader"> Authorized Access Only</h3>
+    
+<!-- HEADER -->
+  <a name="top"> 
+    <div class="row">
+      <div data-interchange="[partials/header_small.html, (small)], [partials/header_medium.html, (medium)], [partials/header_large.html, (large)]">
+    }</div>
+    </div>        
+<!-- END HEADER -->
+<!-- *************************************** -->
+<!-- NAVBAR -->
+    <div class="sticky">
+      <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+          <div data-interchange="[partials/menu.html, (small)], [partials/menu.html, (medium)], [partials/menu.html, (large)]">
           </div>
-        <section class="small-3 columns">
-          <!-- Right Nav Section -->
-           <a href="#" id="loginbutton" class="button tiny alert" data-reveal-id="login">LOGOUT</a>
-        </section>
-      </div> 
+        </section>   
+      </nav>
+    </div>
+<!-- END NAVBAR -->
 
-
-       <div class="contain-to-grid sticky">
-        <nav class="top-bar" data-topbar>
-          <section class="top-bar-section">
-            <ul>
-              <!-- <li>
-                <a href="index.html">Home</a>
-              </li> -->
-              <li>
-                <a href="specialed.html">Special Education</a>
-              </li>
-              <li>
-                <a href="intro.html">Reading Instruction</a>
-              </li>
-              <li>
-                <a href="frameworks.html">Frameworks</a>
-              </li>
-            </ul>
-          </section>   
-        </nav>
-      </div>
     <div id="main-content">
       <div class="row">
         <div class=" small-12 columns">
@@ -56,24 +39,8 @@
         </div>  
       </div>
       <div class="row">
-<!-- ****************************** -->
-  <!-- Sticky Left Nav Section -->
-      <div class="small-3 columns">
-        <dl class="magellan tabs vertical" data-magellan-expedition="fixed">
-          <dd data-magellan-arrival="dyscalculia">
-            <a href="#dyscalculia">Dyscalculia</a>
-          </dd>
-          <dd data-magellan-arrival="studentrsrc">
-            <a href="#studentrsrc">Student Resource Profile</a>
-          </dd>
-          <dd data-magellan-arrival="strategies">
-            <a href="#strategies">Strategies &amp; tips</a>
-          </dd>
-        </dl>
-      </div>
-  <!-- End of sticky Left Nav Section -->
-<!-- ****************************** -->
-      <div class="small-9 columns">    
+
+      <div class="small-10 small-centered medium-12 columns">   
        <h1>
           Bag of Tricks
         </h1>
@@ -91,11 +58,11 @@
         </ul>
           <div id="videoModal1" class="reveal-modal large" data-reveal="" display: block; opacity: 1;>
             <h2>This modal has video</h2>
-            <div class="flex-video widescreen vimeo" style="display: block;">
-              <iframe width="1280" height="720" src="video/ReadingInst/01.meeting-your-instructor_Leslie-Wild.m4v" frameborder="0" allowfullscreen="" data-src="video/ReadingInst/01.meeting-your-instructor_Leslie-Wild.m4v"></iframe>
+            <!-- <div class="flex-video widescreen vimeo" style="display: block;">
+              <iframe width="1280" height="720" src="video/ReadingInst/01.meeting-your-instructor_Leslie-Wild.m4v" frameborder="0" allowfullscreen="" data-src="video/ReadingInst/01.meeting-your-instructor_Leslie-Wild."></iframe>
             </div>
             <a class="close-reveal-modal">&#215;</a>
-          </div>
+          </div> -->
 <!--  End Video 1 Modal -->
 <!-- ************** -->
 
@@ -146,6 +113,19 @@
         </p>
         
        </div>
+       
+    <!-- ******************** -->
+    <!-- Bottom Nav -->
+        <div class="row">
+            <div class="small-4 columns"><a href="read10_elps.html" class="button tiny" id="prevbtn"> Previous Activity</a></div>
+            <div class="small-4 columns"><a href="#top" class="button tiny" id="topbtn" >Back to top</a></div>
+            <div class="small-4 columns"><a href="reading_test.html" class="button tiny" class="" id="nextbtn"> Next Activity</a></div>
+            <hr>
+        </div>
+    <!-- Botton Nav END -->
+    <!-- ***************** -->
+
+
     </div>
   </div>  <!-- end of main-content  -->
 

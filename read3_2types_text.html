@@ -10,43 +10,26 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-      <div id="toparea">
-          <ul class="title-area small-3 columns" >
-            <li class="name">
-              <a href="index.html"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
-            </li>
-          </ul>
-          <div class="small-6 columns" id="header">
-            <h1 id="mainHeader">Intern Training Portal</h1>
-            <h3 id="secondaryHeader"> Authorized Access Only</h3>
+    
+<!-- HEADER -->
+  <a name="top"> 
+    <div class="row">
+      <div data-interchange="[partials/header_small.html, (small)], [partials/header_medium.html, (medium)], [partials/header_large.html, (large)]">
+    }</div>
+    </div>        
+<!-- END HEADER -->
+<!-- *************************************** -->
+<!-- NAVBAR -->
+    <div class="sticky">
+      <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+          <div data-interchange="[partials/menu.html, (small)], [partials/menu.html, (medium)], [partials/menu.html, (large)]">
           </div>
-        <section class="small-3 columns">
-          <!-- Right Nav Section -->
-           <a href="#" id="loginbutton" class="button tiny alert" data-reveal-id="login">LOGOUT</a>
-        </section>
-      </div> 
+        </section>   
+      </nav>
+    </div>
+<!-- END NAVBAR -->
 
-
-       <div class="contain-to-grid sticky">
-        <nav class="top-bar" data-topbar>
-          <section class="top-bar-section">
-            <ul>
-              <!-- <li>
-                <a href="index.html">Home</a>
-              </li> -->
-              <li>
-                <a href="specialed.html">Special Education</a>
-              </li>
-              <li>
-                <a href="intro.html">Reading Instruction</a>
-              </li>
-              <li>
-                <a href="frameworks.html">Frameworks</a>
-              </li>
-            </ul>
-          </section>   
-        </nav>
-      </div>
     <div id="main-content">
       <div class="row">
         <div class=" small-12 columns">
@@ -58,7 +41,7 @@
       <div class="row">
 <!-- ****************************** -->
   <!-- Sticky Left Nav Section -->
-      <div class="small-3 columns">
+     <div class="medium-4 large-3 columns show-for-medium-up">
         <dl class="magellan tabs vertical" data-magellan-expedition="fixed">
           <dd data-magellan-arrival="narrative">
             <a href="#narrative">Narrative</a>
@@ -70,7 +53,7 @@
       </div>
   <!-- End of sticky Left Nav Section -->
 <!-- ****************************** -->
-      <div class="small-9 columns">    
+      <div class="small-10 small-centered medium-8 medium-uncentered large-9 columns">   
             <h1>Activity 3: Two Kinds of Text</h1>
             <p>
                 <b><font size="3" class="redbold">What are two types of texts that students primarily deal with?</font></b>
@@ -423,18 +406,21 @@
         <!--  End Video 4 Modal -->
         <!-- ************** -->
 
-            <h2>Complete Activity 3 Summary Page</h2> 
-          </div>
-          <div class="row">
-        <div class=" small-12 columns">
-          <a href="read2_readfactors.html" class="button tiny" id="prevbtn">Previous Activity</a>
-          <a href="read3_2types_text.html" class="button tiny" id="topbtn" >Back to top</a>
-          <a href="read4_how_students_learn.html" class="button tiny" class="" id="nextbtn"> Next Activity</a>
-          <hr>
-        </div>  
-      </div>
+        <h2>Complete Activity 3 Summary Page</h2> 
     </div>
-   
+          
+    <!-- ******************** -->
+    <!-- Bottom Nav -->
+        <div class="row">
+            <div class="small-4 columns"><a href="read2_readfactors.html" class="button tiny" id="prevbtn"> Previous Activity</a></div>
+            <div class="small-4 columns"><a href="#top" class="button tiny" id="topbtn" >Back to top</a></div>
+            <div class="small-4 columns"><a href="read4_how_students_learn.html" class="button tiny" class="" id="nextbtn"> Next Activity</a></div>
+        </div>
+            
+    <!-- Botton Nav END -->
+    <!-- ***************** -->
+      
+    </div>   
   </div>  <!-- end of main-content  -->
 
 

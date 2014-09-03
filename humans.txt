@@ -1,3 +1,13 @@
+/* TEAM */
+  Design: Tim Patty
+  Front-end: Jaime Velasco
+  Back-end: Shaman Morris
+  
+  @Wickley interactive
+
+  San Antonio, Tx.
+  2014
+  
 /* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
 /* zurb.com */
 /* humanstxt.org */

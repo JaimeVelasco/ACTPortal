@@ -1,0 +1,451 @@
+body {
+	background-image: url('../img/background.jpg'); 
+	background-repeat: repeat-y;
+	height: 100%;
+	background-size: cover;
+}
+
+#toparea {
+	min-height: 130px;
+	background-image:url('../img/background.jpg');
+	background-size: cover;
+}
+.title-area {
+	padding-top: 2em;
+	padding-left: 15%;
+
+}
+#header {	
+	display: table;
+	line-height: normal;
+	text-align: center;
+}
+#mainHeader {
+	color: #fff;
+}
+#secondaryHeader {
+	color: red;
+	font-style:	italic; 
+}
+
+#yellowBar {
+	background-color: yellow;
+	width: 100%;
+	height: 20px;
+}
+
+/*Internal pages Top Nav Menu*/
+#yellowBar2 {
+	background-color: yellow;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+#yellowBar2 a {
+	position: relative; 
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.top-bar-section ul li > a {
+	font-size: 1.3em;
+	position: relative;
+	left: 4em;
+}
+
+.top-bar-section ul li > a {
+	font-size: 1.3em;
+	position: relative;
+	left: 1em;
+}
+/*.contain-to-grid .top-bar {
+	margin: 0 5%;
+}*/
+#nobull {
+	 list-style-type: none;
+	 text-align: left;
+	 padding: 1px;
+}
+
+.whitehead {
+font-size: 14pt;
+font-weight: bold;
+color: #FFFFFF;
+}
+/*Side menu*/
+dl.magellan {
+	width: 240px;
+	
+}
+.tabs.vertical dd, .tabs.vertical .tab-title {
+position: static !important;
+width: 100% !important;
+float: none;
+/*margin-left: -4em;*/
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+	position: relative !important;
+	left: -1em !important;
+}
+
+.mainblock {
+	position: relative;
+	top: 3em;
+	text-align: center;
+}
+.mainblock ol {
+	text-align: left;
+}
+#homepage {
+	background-image: url('../img/paper.jpg'); 
+	background-repeat: repeat-y;
+	height: 72%;
+	background-size: cover;
+	/*overflow: auto;*/
+}
+#main-content{
+	background-image: url('../img/paper.jpg'); 
+	background-repeat: repeat;
+	height: auto;
+	/*overflow: auto;*/
+}
+#sub-header1 {
+	color: #e59c01;
+	text-align:center;
+	padding: .5em 1em 1em;
+}
+#sub-header2 {
+	color: #0c7ff4;
+	text-align:center;
+	padding: .5em 1em 1em;
+}
+#sub-header3 {
+	color: #fca600;
+	text-align:center;
+	padding: .5em 1em 1em;
+}
+footer{
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	padding-top: 2em;
+	z-index: 200;
+	position: relative;
+}
+footer p {
+	line-height: 1em;
+}
+#footertxt1 {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#footertxt2 {
+	color: #ffe400;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#footertxt3 {
+	color: #676767;
+	text-align: center;
+	font-size: .8em;
+}
+
+/****************************************************/
+/*Homepage Mega-Menu Transitions*/
+/*INITIAL STATE*/
+#specialEd{
+	position: absolute;
+	top: 0em;
+	left: 2.45em;
+	width: 250px;
+	height: 310px;
+	padding: 1em; 
+	background: transparent;
+	-webkit-transition: width 1s, height 1s, background 1s, z-index .1s, top 1s;
+	   -moz-transition: width  1s, height 1s, background 1s, z-index .1s, top 1s;
+	     -0-transition: width 1s, height 1s, background 1s, z-index .1s, top 1s;
+			transition: width 1s, height 1s, background 1s, z-index .1s, top 1s;
+	z-index: 10;
+}
+
+/*TARGET TRANSITIONS*/
+
+#specialEd:hover {
+	width: 918px;
+	height: 250px;
+	background: #9ed900;
+	z-index: 20;
+	top:3.8em;
+}
+#reading {
+	position: absolute;
+	top: 0em;
+	left: 2.45em;
+	width: 250px;
+	height: 310px;
+	padding: 1em; 
+	background: transparent;
+	-webkit-transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+	   -moz-transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+	     -0-transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+	        transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+	z-index: 10;
+}
+#reading:hover {
+	width: 918px;
+	height: 410px;
+	background: #0c7ff4;
+	left: -18.45em;
+	z-index: 20;
+	top:3.8em;
+}
+
+#frameworks {
+	position: absolute;
+	top: 0em;
+	left: 2.45em;
+	width: 250px;
+	height: 310px;
+	background: transparent;
+	-webkit-transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+	   -moz-transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+	     -0-transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+			transition: width 1s, height 1s, background 1s, left 1s, z-index .1s, top 1s;
+	z-index: 10;
+}
+
+#frameworks:hover {
+	width: 918px;
+	height: 265px;
+	background: #fca600;
+	left: -39.2em;
+	z-index: 20;
+	top:3.8em;
+
+}
+
+#specialEd section, #reading section, #frameworks section{
+	visibility:hidden;
+	opacity:0;
+	transition: visibility 0s, opacity 2s;
+}
+#specialEd:hover section, #reading:hover section, #frameworks:hover section{
+	visibility:visible;
+	opacity:1;
+	top: 1em;
+	transition-delay: .54s;
+
+}
+#specialEd h6, #reading h6, #frameworks h6{
+	color: #fff;
+	text-align: left;
+}
+#specialEd h6:hover, #reading h6:hover, #frameworks h6:hover{
+	color: #d5d5d5;
+	text-align: left;
+}
+#specialEd h4, #reading h4, #frameworks h4{
+	color: #fff;
+	text-align: left;
+}
+#specialEd h4:hover, #reading h4:hover, #frameworks h4:hover{
+	color: #d5d5d5;
+	text-align: left;
+}
+#specialEd a, #reading a, #frameworks a{
+	color: #000;
+}
+#specialEd a:hover, #reading a:hover, #frameworks a:hover{
+	color: #fff;
+}
+#specialEd li, #reading li, #frameworks li{
+	font-size: .7em;
+}
+.menuhr {
+	margin: 0px
+}
+.menuhrlong {
+	margin: 0px;
+	width: 200%;
+}
+#elearn {
+	position: relative;
+	left: 4.5em;
+}
+.smlbr{
+	line-height: 2.7em;
+}
+
+
+@-moz-document url-prefix() { 
+  #frameworks, #reading, #specialEd{
+     top: 3.5em;
+  }
+}
+
+.top-bar-section li a:not(.button) {
+    background: yellow !important; 
+    color: #000 !important; 
+    text-align: center !important;
+     
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: green !important;   
+}
+
+.top-bar-section ul li.active > a {
+    background: gray !important;   
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: yellow !important;   
+}
+
+#login{
+	max-width: 30%;
+	position: absolute;
+	left: 75%;
+}
+#loginbutton{
+	position: relative;
+	left: 6em;
+	bottom: 4em;
+
+}
+#loginbutton1{
+	position: relative;
+	right: 5em;
+	top: 7em;
+}
+
+.redbold{
+	font-weight: bold;
+	color: #CC0000;
+}
+.origunder {
+	font-weight: bolder;
+	color: #000099;
+}
+
+#redpanel{
+	background-color: red;
+}
+#redpanel p{
+		color: #fff;
+}
+#specialedpanel{
+	background-color: #faa544;
+	min-height: 250px;
+}
+#specialedpanel p{
+		color: #000;
+		margin-top: 4em;
+		font-weight: bold;
+		font-style: italic;
+}
+#assistivepaneltxt{
+	position: absolute;
+	left: 9em;
+	bottom: 1em;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.2em;
+}
+.handount{
+	font-weight: bold;
+	color: #660066;
+}
+#imagen {
+	padding: .5em; 
+}
+#left{
+	float: left;
+}
+#right {
+	float: right;
+}
+hr.thickGreen{
+	border-width: 5px 0 0;
+	border-color: #9ed900
+}
+#accordionheader{
+	color: #5b7d00;
+}
+.fixed {
+	text-align: center !important;
+}
+.accordion .accordion-navigation > a, .accordion dd > a {
+	background: #c0d38e !important;
+	padding: .5em !important;
+	color: #5b7d00 !important;
+	font-size: 1.1em !important;
+}
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+	background: #5b7d00 !important;
+	color: #fff !important;
+}
+
+.accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+	background: #f4f9e5 !important;
+
+}
+.videomodal {
+	width: 155px;
+	background:url(images/sprite.png) 330 330px;
+}
+#videoz {
+	text-align: center;
+}
+
+#vcenter{
+	display: table-cell;
+	vertical-align: middle;
+	height: 50px;
+}
+.contain-to-grid {
+	color: yellow !important;
+	text-align: center !important;
+}
+
+#nextbtn {
+ 	float: right;
+ 	background: #ff8400;
+ 	margin: 2em 0em;
+}
+#prevbtn {
+ 	float: left;
+ 	background: #ff8400;
+ 	margin: 2em 0em;
+}
+#topbtn{
+	background: #5b7d00;
+	margin: 2em;
+	position: relative;
+	left: 25%;
+}
+#nextbtn:hover, #prevbtn:hover {
+	background: #5b7d00;
+}
+#topbtn:hover {
+	background: #ff8400;
+}
+nav.top-bar {
+	text-align:center;
+}
+section.top-bar-section {
+	display: inline-block;
+}
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+	margin-top: 2em;
+}
+.flex-video.widescreen {
+	padding-bottom: 60.34%;
+	background-color: #000;
+}
+	/*.name{
+		position: relative;
+		top: 2em;
+	}*/

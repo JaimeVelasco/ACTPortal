@@ -10,43 +10,26 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-      <div id="toparea">
-          <ul class="title-area small-3 columns" >
-            <li class="name">
-              <a href="index.html"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
-            </li>
-          </ul>
-          <div class="small-6 columns" id="header">
-            <h1 id="mainHeader">Intern Training Portal</h1>
-            <h3 id="secondaryHeader"> Authorized Access Only</h3>
+  
+<!-- HEADER -->
+  <a name="top"> 
+    <div class="row">
+      <div data-interchange="[partials/header_small.html, (small)], [partials/header_medium.html, (medium)], [partials/header_large.html, (large)]">
+    }</div>
+    </div>        
+<!-- END HEADER -->
+<!-- *************************************** -->
+<!-- NAVBAR -->
+    <div class="sticky">
+      <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+          <div data-interchange="[partials/menu.html, (small)], [partials/menu.html, (medium)], [partials/menu.html, (large)]">
           </div>
-        <section class="small-3 columns">
-          <!-- Right Nav Section -->
-           <a href="#" id="loginbutton" class="button tiny alert" data-reveal-id="login">LOGOUT</a>
-        </section>
-      </div> 
+        </section>   
+      </nav>
+    </div>
+<!-- END NAVBAR -->
 
-
-      <div class="contain-to-grid sticky">
-        <nav class="top-bar" data-topbar>
-          <section class="top-bar-section">
-            <ul>
-            <!--   <li>
-                <a href="index.html">Home</a>
-              </li> -->
-              <li>
-                <a href="specialed.html">Special Education</a>
-              </li>
-              <li>
-                <a href="intro.html">Reading Instruction</a>
-              </li>
-              <li>
-                <a href="frameworks.html">Frameworks</a>
-              </li>
-            </ul>
-          </section>   
-        </nav>
-      </div>
   <div id="main-content">
     <div class="row">
       <div class=" small-12 columns">
@@ -56,9 +39,9 @@
       </div>  
     </div>
     <div class="row">
+<!-- sticky Left Nav Section -->
 <!-- ****************************** -->
-  <!-- Sticky Left Nav Section -->
-      <div class="small-2 columns">
+      <div class="medium-4 large-3 columns show-for-medium-up">  
         <dl class="magellan tabs vertical" data-magellan-expedition="fixed">
           <dd data-magellan-arrival="welcome">
             <a href="#welcome">Welcome</a>
@@ -73,7 +56,7 @@
             <a href="#ada">Americans with Disabilities Act (ADA)</a>
           </dd>
           <dd data-magellan-arrival="texed">
-            <a href="#texed">Texas Educational Code and Texas Administration CodeP</a>
+            <a href="#texed">Texas Educational Code and Texas Administration Code</a>
           </dd>
           <dd data-magellan-arrival="texas4step">
             <a href="#texas4step">Texas 4-Step Model</a>
@@ -83,7 +66,7 @@
   <!-- End of sticky Left Nav Section -->
 <!-- ****************************** -->
 
-      <div class="small-9 columns">
+      <div class="small-10 small-centered medium-8 medium-uncentered large-9 columns">
         <h1>Assistive Technology</h1>
         <a name="welcome" data-magellan-destination="welcome"></a> <!-- magellan destination -->
         <h3>WELCOME to the online module for ASSISTIVE TECHNOLOGY! </h3>
@@ -136,8 +119,13 @@
         This statute mandates that any program that receives federal financial assistance <span class="origunder">must provide</span> each student with a disability the special education and <span class="origunder">related aids and services</span> that constitute a free appropriate education for that student. Since public schools receive federal funding, they are subject to the requirements of this statute. 
       </p>
         <img src="img/assistivepanel.png" id="imagen">
-        <div class="small-12 columns">
-          <p id="assistivepaneltxt">
+        <div class="large-12 columns show-for-large-only">
+          <p id="assistivepaneltxtlg">
+            There  are several other federal statues that create an obligation on the part of the  public school to provide AT and AT services to students with disabilities.
+          </p>
+        </div>
+        <div class="small-12 columns hide-for-large-only">
+          <p id="assistivepaneltxtsm">
             There  are several other federal statues that create an obligation on the part of the  public school to provide AT and AT services to students with disabilities.
           </p>
         </div>
@@ -176,6 +164,7 @@
             </ul>
           </div>
         </div>
+        <br>
         <div class="row">
           <div class="small-3 columns">
             <img src="img/micicon.png" height="150px" class="left">
@@ -192,6 +181,7 @@
             </ul>
           </div>
         </div>
+        <br>
         <div class="row">
           <div class="small-3 columns">
             <img src="img/desktopicon.png" height="150px" class="left">
@@ -209,6 +199,7 @@
             </ul>
           </div>
         </div>
+        <br>
 
         When looking at all the definitions and federal statutes, you can see that school districts have numerous responsibilities under federal statute and Texas code.
     <p>
@@ -230,12 +221,14 @@
     
     <div class="row">
       <a name="texas4step" data-magellan-destination="texas4step"></a> <!-- magellan destination -->
-       <h2>The Texas 4-Step Model</h2>
+      
+    <h2>The Texas 4-Step Model:</h2>
+    <h3 class="redbold" align="center">Click on Each Panel to Read More</h3>
       <!-- Step Panels -->
           <dl class="accordion" data-accordion>
             <dd class="accordion-navigation">
               <a href="#panel1">Step 1 </a>
-              <div id="panel1" class="content">
+              <div id="panel1" class="content active">
                 <h4 id="accordionheader">
                   Review the student's present level of academic achievement and functional performance and evaluation data.
                 </h4>
@@ -473,14 +466,19 @@
             <br>
           </dd>
         </dl> <!-- End of Step Panels -->
-    </div> 
+    </div>
 
-
-
-
-
-
-
+    <!-- ******************** -->
+    <!-- Bottom Nav -->
+        <div class="row">
+            <div class="small-4 columns"><a href="specialed.html" class="button tiny" id="prevbtn"> Previous Activity</a></div>
+            <div class="small-4 columns"><a href="#top" class="button tiny" id="topbtn" >Back to top</a></div>
+            <div class="small-4 columns"><a href="math.html" class="button tiny" class="" id="nextbtn"> Next Activity</a></div>
+            <hr>
+        </div>
+    <!-- Botton Nav END -->
+    <!-- ***************** -->
+    
       </div>
       </div>
       
@@ -501,7 +499,7 @@
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript"> $(document).foundation();</script>
     <script type="text/javascript">
-      $(document).foundation({ "magellan-expedition": { destination_threshold: -400 } });
+      $(document).foundation({ "magellan-expedition": { destination_threshold: -350 } });
     </script>
     
   </body>

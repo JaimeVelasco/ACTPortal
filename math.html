@@ -10,43 +10,26 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-      <div id="toparea">
-          <ul class="title-area small-3 columns" >
-            <li class="name">
-              <a href="index.html"><img src="img/actlogoheader.png" alt="ACT logo" width="130"></a>
-            </li>
-          </ul>
-          <div class="small-6 columns" id="header">
-            <h1 id="mainHeader">Intern Training Portal</h1>
-            <h3 id="secondaryHeader"> Authorized Access Only</h3>
+
+<!-- HEADER -->
+  <a name="top"> 
+    <div class="row">
+      <div data-interchange="[partials/header_small.html, (small)], [partials/header_medium.html, (medium)], [partials/header_large.html, (large)]">
+    }</div>
+    </div>        
+<!-- END HEADER -->
+<!-- *************************************** -->
+<!-- NAVBAR -->
+    <div class="sticky">
+      <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+          <div data-interchange="[partials/menu.html, (small)], [partials/menu.html, (medium)], [partials/menu.html, (large)]">
           </div>
-        <section class="small-3 columns">
-          <!-- Right Nav Section -->
-           <a href="#" id="loginbutton" class="button tiny alert" data-reveal-id="login">LOGOUT</a>
-        </section>
-      </div> 
+        </section>   
+      </nav>
+    </div>
+<!-- END NAVBAR -->
 
-
-      <div class="contain-to-grid sticky">
-        <nav class="top-bar" data-topbar>
-          <section class="top-bar-section">
-            <ul>
-            <!--   <li>
-                <a href="index.html">Home</a>
-              </li> -->
-              <li>
-                <a href="specialed.html">Special Education</a>
-              </li>
-              <li>
-                <a href="intro.html">Reading Instruction</a>
-              </li>
-              <li>
-                <a href="frameworks.html">Frameworks</a>
-              </li>
-            </ul>
-          </section>   
-        </nav>
-      </div>
   <div id="main-content">
     <div class="row">
       <div class=" small-12 columns">
@@ -58,13 +41,13 @@
     <div class="row">
 <!-- ****************************** -->
   <!-- Sticky Left Nav Section -->
-      <div class="small-3 columns">
+      <div class="medium-4 large-3 columns show-for-medium-up">
         <dl class="magellan tabs vertical" data-magellan-expedition="fixed">
           <dd data-magellan-arrival="dyscalculia">
             <a href="#dyscalculia">Dyscalculia</a>
           </dd>
-          <dd data-magellan-arrival="studentrsrc">
-            <a href="#studentrsrc">Student Resource Profile</a>
+          <dd data-magellan-arrival="mathdis">
+            <a href="#mathdis">Experience Math Disability</a>
           </dd>
           <dd data-magellan-arrival="strategies">
             <a href="#strategies">Strategies &amp; tips</a>
@@ -73,7 +56,7 @@
       </div>
   <!-- End of sticky Left Nav Section -->
 <!-- ****************************** -->
-      <div class="small-9 columns">
+      <div class="small-12 medium-8 large-9 columns">   
         <h1>Math for Special Learners</h1>
       <h4>
         OBJECTIVE: During this module, you will learn about services that are provided to children ages 0-5.
@@ -297,7 +280,7 @@
             The most important thing you can do for a student with dyscalculia is help them identify their strengths and weaknesses, this will build confidence and give students a sense of purpose and focus.
           </p>
           <hr class="thickGreen">
-          <a name="studentrsrc" data-magellan-destination="studentrsrc"></a> <!-- magellan destination -->
+          <a name="mathdis" data-magellan-destination="mathdis"></a> <!-- magellan destination -->
           <h3 id="accordionheader">
             Want to see what it is like to have a math disability?<br>
             Experience it yourself!
@@ -313,8 +296,8 @@
           
     <!-- ************** -->
     <!-- Video 8 Modal -->
-             <div class="right" id="imagen">
-              <span data-tooltip class="has-tip" title="Typical Math Lesson With Manipulatives"><a href="#" data-reveal-id="videoModal8"><img src="img/videoicon.png" ></a></span>
+             <div class="right">
+              <span id="imagen" data-tooltip class="has-tip" title="Typical Math Lesson With Manipulatives"><a href="#" data-reveal-id="videoModal8"><img src="img/videoicon.png" ></a></span>
               <div id="videoModal8" class="reveal-modal large" data-reveal="" display: block; opacity: 1;>
                 <h2>This modal has video</h2>
                 <div class="flex-video widescreen vimeo" style="display: block;">
@@ -330,7 +313,8 @@
           </p>
     <!-- ************** -->
     <!-- Video 9 Modal --> 
-          <div class="row" data-equalizer>
+
+          <div class="row left" data-equalizer>
             <div class="small-8 columns" data-equalizer-watch>
               <p id="vcenter">
                 <strong>What if I don't have access to any materials? How am I going to be able to teach hands on math? GET CREATIVE!</strong>
@@ -510,6 +494,19 @@
             Complete your Math Strategies Summary Page and add it to your NOTEBOOK!
           </p>
         </div>
+
+    <!-- ******************** -->
+    <!-- Bottom Nav -->
+        <div class="row">
+            <div class="small-4 columns"><a href="assistive_tech.html" class="button tiny" id="prevbtn"> Previous Activity</a></div>
+            <div class="small-4 columns"><a href="#top" class="button tiny" id="topbtn" >Back to top</a></div>
+            <div class="small-4 columns"><a href="e_learning.html" class="button tiny" class="" id="nextbtn"> Next Activity</a></div>
+        </div>
+            
+    <!-- Botton Nav END -->
+    <!-- ***************** -->
+
+
       </div>
     </div> <!-- end of main-content -->
 
@@ -528,7 +525,7 @@
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript"> $(document).foundation();</script>
     <script type="text/javascript">
-      $(document).foundation({ "magellan-expedition": { destination_threshold: -120 } });
+      $(document).foundation({ "magellan-expedition": { destination_threshold: -50 } });
     </script>
     
   </body>
