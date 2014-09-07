@@ -1232,7 +1232,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: yellow; }
+  background: transparent; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -1361,7 +1361,7 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: yellow; }
+    background: transparent; }
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
@@ -1555,7 +1555,8 @@ meta.foundation-mq-topbar {
 
   .top-bar-section {
     transition: none 0 0;
-    left: 0 !important; }
+    left: 0 !important; 
+    top: 3px; }
     .top-bar-section ul {
       width: auto;
       height: auto !important;
@@ -1570,7 +1571,7 @@ meta.foundation-mq-topbar {
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
-      line-height: 45px;
+      line-height: 2em;
       background: yellow; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
@@ -4030,7 +4031,7 @@ ul.off-canvas-list {
     width: 0;
     height: 0;
     border: inset 6px;
-    border-color: transparent transparent white transparent;
+    border-color: transparent transparent transparent transparent;
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
@@ -4042,7 +4043,7 @@ ul.off-canvas-list {
     width: 0;
     height: 0;
     border: inset 7px;
-    border-color: transparent transparent #cccccc transparent;
+    border-color: transparent transparent transparent transparent;
     border-bottom-style: solid;
     position: absolute;
     top: -14px;

@@ -1,24 +1,68 @@
+
+
 <!-- ***************************************** -->
 <!-- MENU BAR FOR MEDIUM AND LARGE VIEWS -->
 <ul class="show-for-medium-up">
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="specialed.html">Special Education</a>
-  </li>
-  <li>
-    <a href="intro.html">Reading Instruction</a>
-  </li>
-  <li>
-    <a href="frameworks.html">Frameworks</a>
-  </li>
-</ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a data-dropdown="specialedmenu" aria-controls="specialedmenu" aria-expanded="true" data-options="is_hover:true">Special Education</a>
+              <ul id="specialedmenu" class="tiny content f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                <!-- <li id="activities"><p><strong>ACTIVITIES</strong></p></li> -->
+                <li><a href="specialed.html">Early Childhood</li></a>
+                <li><a href="assistive_tech.html">Assistive Technology</li></a>
+                <li><a href="math.html">Math/Language Arts</li></a>
+                <li><a href="e_learning.html">E-Learning</li></a>
+              </ul>
+            </li>
+            <li>
+              <a data-dropdown="readingmenu" aria-controls="readingmenu" aria-expanded="true" data-options="is_hover:true">Reading Instruction</a>
+              <ul id="readingmenu" class="tiny content f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                <li><a href="intro.html">Welcome</li></a>
+                <li><a href="compinput.html">Comprehensive Input</li></a>
+                <li><a href="special_populations.html">Special Populations</li></a>
+                <!-- <li id="activities"><p><strong>ACTIVITIES</strong></p></li> -->
+                <li><a href="read1_compre.html">Comprehension</li></a>
+                <li><a href="read2_readfactors.html">Reading Factors</li></a>
+                <li><a href="read3_2types_text.html">Two Types of Text</li></a>
+                <li><a href="read4_how_students_learn.html">How Students learn</li></a>
+                <li><a href="read5_motivation.html">Motivation</li></a>
+                <li><a href="read6_effective_read.html">Effective Instruction</li></a>
+                <li><a href="read7_sheltered_content.html">Sheltered Content</li></a>
+                <li><a href="read8_staar_bench.html">STAAR &amp; Benchmarks</li></a>
+                <li><a href="read9_activities.html">Activities</li></a>
+                <li><a href="read10_elps.html">English Language Proficiency Standards</li></a>
+                <li><a href="bag_of_tricks.html">Bag of Tricks</li></a>
+                <li><a href="reading_test.html">Reading test</li></a>
+              </ul>
+            </li>
+            <li>
+              <a data-dropdown="frameworksmenu" aria-controls="frameworksmenu" aria-expanded="true" data-options="is_hover:true">Frameworks</a>
+              <ul id="frameworksmenu" class="tiny content f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                
+                <!-- <li id="activities"><p><strong>ACTIVITIES</strong></p></li>
+                <br> -->
+                <li><a href="frame_welcome.html">Welcome</li></a>
+                <li><a href="frame1_intro.html">Introduction</li></a>
+                <li><a href="frame2_cooperative.html">Cooperative Grouping</li></a>
+                <li><a href="frame3_identify.html">Identifying Similarities &amp; Differences</li></a>
+                <li><a href="frame4_nonlinguistic.html">Non-Linguistic Representations and Organizers</li></a>
+                <li><a href="frame5_homework.html">Homework &amp; Practice</li></a>
+                <li><a href="frame6_cue.html">Cue, Questions &amp; Advanced Organizers</li></a>
+              </ul>
+            </li>
+          </ul>  
     
+
 
 
 <!-- ***************************************** -->
 <!-- OFF CANVAS MENU FOR SMALL DEVICES -->
 
-  <!-- <h3 class="left-off-canvas-toggle show-for-small-only" href="#mymenu" >Menu</h3> -->
+  <h3 class="left-off-canvas-toggle show-for-small-only" href="#mymenu" >Menu</h3>
 
+
+<!-- Reset Foundation (allthefkntime!) -->
+  <script type="text/javascript"> $(document).foundation();</script> 
+  
